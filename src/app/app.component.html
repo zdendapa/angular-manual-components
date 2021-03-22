@@ -1,1 +1,2 @@
-<app-list [list]="list">
+<button (click)="reset()">RESET</button>
+<app-list [list]="list" (outDelName)="delName($event)">

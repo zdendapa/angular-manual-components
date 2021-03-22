@@ -1,9 +1,9 @@
 <p>
-  list works!
+  Seznam světců
 </p>
 
 <ul>
   <li *ngFor="let name of list">
-    <app-list-item [name]="name"></app-list-item>
+    <app-list-item [name]="name" (del)="del($event)"></app-list-item>
   </li>
 </ul>

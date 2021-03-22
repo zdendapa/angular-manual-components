@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
   selector: "app-list-item",
@@ -9,5 +9,12 @@ export class ListItemComponent {
   @Input()
   name: string;
 
+  @Output()
+  del = new EventEmitter();
+
   constructor() {}
+
+  delFun() {
+    this.del.emit(this.name);
+  }
 }
