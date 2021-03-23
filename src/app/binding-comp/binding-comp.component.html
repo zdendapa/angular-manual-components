@@ -1,0 +1,8 @@
+<p>
+binding-comp works!
+</p>
+<div>Hero name: {{ hero.name }}</div>
+<span>Hero name: </span><input [(ngModel)]="hero.name">
+
+<div>Hero2 name: {{ heroSecond.name }}</div>
+<span>Hero2 name: </span><input [ngModel]="heroSecond.name" (ngModelChange)="heroSecond.name = $event">

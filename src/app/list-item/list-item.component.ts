@@ -12,8 +12,6 @@ export class ListItemComponent {
   @Output()
   del = new EventEmitter();
 
-  constructor() {}
-
   delFun() {
     this.del.emit(this.name);
   }
