@@ -3,11 +3,15 @@
   Bindings demo
 </p>
 <div>Hero name: {{ hero.name }}</div>
-<span>Hero name: </span><input [(ngModel)]="hero.name" />
-
+<span>Hero input: </span><input [(ngModel)]="hero.name" />
+<br><br>
 <div>Hero2 name: {{ heroSecond.name }}</div>
-<span>Hero2 name: </span
+<span>Hero2 input: </span
 ><input
   [ngModel]="heroSecond.name"
   (ngModelChange)="heroSecond.name = $event"
 />
+<br><br>
+<div>Hero3 name: {{ heroThird.name }}</div>
+Hero input3 <input #heroInput [value]="heroThird.name" (keyup)="heroThird.name = heroInput.value">
+

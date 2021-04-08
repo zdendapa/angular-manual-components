@@ -9,10 +9,12 @@ export class BindingCompComponent implements OnInit {
 
     hero;
     heroSecond;
+    heroThird;
 
   constructor() {
     this.hero = { name: "Patermutia" };
     this.heroSecond = { name: "Kopria" };
+    this.heroThird = { name: "Marie Egyptská" };
     console.log(this.hero.name);
   }
 
